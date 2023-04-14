@@ -1,0 +1,163 @@
+@import url(style.css);
+@import url(faq.css);
+
+.questions {
+    background-color: #fff;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.questions:nth-child(odd) {
+    color: white;
+    background-color: #440F51;
+}
+
+.questions:nth-child(odd)::after {
+    content: "";
+    background-image: url("img/icons/open.svg");
+    background-size: contain; 
+    width: 30px;
+    height: 30px;
+    float:right;
+    background-repeat: no-repeat;
+}
+
+.questions:nth-child(even)::after {
+    content: "";
+    background-image: url("img/icons/open-purple.svg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    float:right;
+}
+
+.label {
+    width: 369px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+.banner {
+    background-image: url("img/image/start_picture.png");
+    background-position: right 20px top 61px;
+    background-repeat: no-repeat;
+    background-size: 675px 762px ;
+    margin-top: 146px;
+    height: 823px;
+}
+
+h2 {
+    width: 980px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bg-one {
+    background-image: url("img/image/hall_80.png");
+}
+
+.bg-two {
+    background-image: url("img/image/hall_star_wars.png");
+}
+
+.bg-three {
+    background-image: url("img/image/hall_wild_west.png");
+}
+
+.bg-four {
+    background-image: url("img/image/hall_neon_style.png");
+}
+
+.link-hall {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 10em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slogan {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    /* or 114% */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.slogan::before,.slogan::after {
+    content: " “ ";
+    color:#6C0287;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.slogan::before {
+    content: " “ ";
+}
+
+.slogan::after {
+    content: " ” ";
+}
+
+.author {
+    float: right;
+}
+
+.contacts {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.tel {
+    vertical-align: middle;
+}
+
+.img-contacts {
+    vertical-align: bottom;
+}
+
+.locate {
+    margin-bottom: 38px;
+}
+
+.social {
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    margin-top: 60px;
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    margin-right: 28px;
+}
+
+.top-info {
+    padding-top: 54px;
+}
