@@ -11,6 +11,10 @@
     list-style-type: none;
 }
 
+.questions:last-child {
+    margin-bottom: 0;
+}
+
 .questions:nth-child(odd) {
     color: white;
     background-color: #440F51;
@@ -37,31 +41,36 @@
 }
 
 .label {
-    width: 369px;
-    height: 50px;
     font-weight: 400;
     font-size: 28px;
     line-height: 50px;
-    margin-left: 100px;
+    color: #FFFFFF;
+    padding-left: 100px;
 }
 
 .banner {
-    background-image: url("img/image/start_picture.png");
-    background-position: right 20px top 61px;
-    background-repeat: no-repeat;
-    background-size: 675px 762px ;
-    margin-top: 146px;
-    height: 823px;
+    height: 835px;
+    width: 1180px;
+    position: relative;
+}
+
+.banner::after{
+    content: url("img/image/start_picture.png");
+    position: absolute;
+    top: 73px;
+    right: 17px;
+    height: 762px ;
+    width: 675px;
 }
 
 h2 {
-    width: 980px;
-    height: 56px;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 50px;
 }
 
 .bg{
@@ -106,12 +115,13 @@ h2 {
     line-height: 50px;
     /* or 114% */
     text-transform: uppercase;
-    margin: 0;
 }
 
 .slogan::before,.slogan::after {
     content: " “ ";
     color:#6C0287;
+    font-family: 'Arial';
+    font-style: normal;
     font-weight: 900;
     font-size: 55px;
     line-height: 50px;
@@ -154,10 +164,8 @@ h2 {
     margin-top: 60px;
     height: 48px;
     width: 48px;
+    color: wheat;
+    margin: 0;
     display: inline-block;
     margin-right: 28px;
-}
-
-.top-info {
-    padding-top: 54px;
 }

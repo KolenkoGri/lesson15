@@ -6,14 +6,13 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+box-sizing: inherit;
 }
 
 body {
     min-width: 320px;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    font-style: normal;
     background-color: #1B1A1B;
     color:#FFFFFF;
 }
@@ -80,6 +79,15 @@ iframe {
     margin: 0 auto;
 }
 
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arial';
+    font-style: normal;
+    margin: 0 auto;
+    padding: 0;
+}
+
 blockquote {
     display: inline-block;
     font-weight: 400;
@@ -91,7 +99,6 @@ blockquote {
     background-position: right 250px bottom;
     background-repeat: no-repeat;
     background-size: 80px 80px ;
-    margin-left: 0;
 }
 
 label {
@@ -109,11 +116,6 @@ h1 {
     color: #FFFFFF;
 }
 
-h2 {
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
 p {
     font-weight: 400;
     font-size: 20px;
@@ -122,11 +124,16 @@ p {
     color: #FFFFFF;
 }
 
-a{
+a {
     color: #FFFFFF;
 }
 
-section, footer {
-    padding-top: 100px;
-    padding-bottom: 60px;
+section,footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header {
+    padding-top: 146px;
+    padding-bottom: 50px;
 }
